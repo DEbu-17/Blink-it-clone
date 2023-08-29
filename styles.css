@@ -1,3 +1,18 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box ;
+}
+.my-nav{
+  border-bottom: 1px solid rgb(238, 238, 238);
+ 
+  background-color: white;
+}
+header{
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 .vertical-line {
   height: 40px;
   border-right: 2px solid #f2f2f2;
@@ -8,6 +23,7 @@
   font-weight: 800;
   margin-bottom: 6px;
   font-size: 18px;
+  line-height: 15px;
 }
 .location p {
   font-size: 13px;
@@ -19,7 +35,7 @@
   padding: 0px 12px;
   border: 1px solid rgb(232, 232, 232);
   border-radius: 12px;
-  background: rgb(248, 248, 248);
+  background-color: rgb(248, 248, 248);
   color: rgb(130, 130, 130);
 }
 .search-div input {
@@ -28,11 +44,12 @@
   width: 45vw;
   height: 45px;
 }
+
 .my-cart {
   background-color: #0c831f !important;
   font-size: 14px !important;
   border-radius: 8px !important;
-  font-family: Okra-Bold !important;
+  font-weight: bold !important;
   color: rgb(255, 255, 255) !important;
 }
 ::placeholder {
@@ -43,6 +60,7 @@
      width: 81%;
      margin: auto;
      overflow-x: scroll;
+    
 }
 .my-list{
     white-space: nowrap;
@@ -75,6 +93,7 @@
     font-weight: 600;
     font-size: 13px;
     margin-bottom: 6px;
+    overflow: hidden;
 }
 .my-card-weight{
   color: #666666;
@@ -91,82 +110,33 @@
 
 }
 .my-products{
-   width: 85%;
+   width: 82% !important;
    margin:auto;
 }
+.my-products h4{
+  font-weight: bolder !important;
+  line-height: 32px !important;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
 .row-class{
   width: 100%;
   overflow-x: scroll;
 }
- .footer-section{
-  width:85%;
-  margin: auto;
- }
- .row-2{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  
- }
-.row-3{
-  color:#707070;
-  font-size: 13px;
-  text-align: justify;
-  padding: 10px;
+footer{
+ text-align: center;
+ margin:50px 0;
+
 }
-.download-btns{
-  border: none;
-  background-color: #233b4f;
-  border-radius: 20px;
-  color: white;
-  margin: 5px;
-  padding-inline:55px;
+.my-love{
+  color: red;
 }
-.socials{
-  margin-left: 30px;
-}
-.download-section p{
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    margin: 16px !important;
-   
-}
-.my-icons{
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  margin-inline: 15px;
-}
-.row-2 p{
-  color: #707070;
-  text-align: justify;
-  font-size: 12px;
-  width: 70%;
-}
-.row-1{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.useful-links{
-  flex:2
-}
-.catagories{
-  flex:3
-}
-td{
-  color: rgb(130, 130, 130);
-  font-size: 14px;
-  padding: 5px 10px;
-}
-table{
- width: 100%;
+@media screen and (max-width:768px) {
+  .my-nav{
+    flex-direction: column;
+  }
+  .vetical-line, .hero-section img{
+    display: none;
+  }
 }
