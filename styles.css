@@ -135,11 +135,22 @@ footer{
 .my-love{
   color: red;
 }
+.my-breads{
+  
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+    font-weight: 500;
+   
+}
 @media screen and (max-width:768px) {
   .my-nav{
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .vetical-line, .hero-section img{
-    display: none;
+    display: none !important;
   }
+   .my-catagory{
+    width:100%;
+   }
+   
 }
