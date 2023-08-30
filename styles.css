@@ -56,7 +56,7 @@ header{
   font-size: 14px;
   color: rgb(153, 153, 153);
 }
-.my-products,.my-container{
+.my-container{
      width: 81%;
      margin: auto;
      overflow-x: scroll;
@@ -66,7 +66,8 @@ header{
     white-space: nowrap;
 }
 .my-list img{
-    margin-inline:7px;
+   margin-inline:15px;
+   margin-left:0;
 }
 ::-webkit-scrollbar{
   display: none;
@@ -111,8 +112,9 @@ header{
 
 }
 .my-products{
-   width: 82% !important;
+   width: 82%;
    margin:auto;
+   overflow-x: scroll;
 }
 .my-products h4{
   font-weight: bolder !important;
